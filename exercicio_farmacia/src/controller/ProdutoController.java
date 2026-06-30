@@ -9,7 +9,7 @@ import repository.ProdutoRepository;
 
 public class ProdutoController implements ProdutoRepository{
 	
-	//AUTO NUMERAÇÃO DE ID
+	//CRIAR UMA LIST PRODUTO
 	private List<Produto> listaProduto = new ArrayList<Produto>();
 	int iD = 0;
 
@@ -24,9 +24,7 @@ public class ProdutoController implements ProdutoRepository{
 	
 	@Override
 	public void listarTodas() {
-		for(var produto : listaProduto) {
-			produto.visualizar();
-		}
+		listaProduto.forEach(produto -> produto.visualizar());
 	}
 
 	

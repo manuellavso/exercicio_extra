@@ -24,6 +24,7 @@ public class Medicamento extends Produto{
 	public void visualizar() {
 		super.visualizar();
 		System.out.println("\nDesconto escrito na receita: R$" +this.receita);
+		System.out.println("Novo preço após desconto: R$" +(this.getPreco() - this.receita));
 		System.out.println();
 	}
 	

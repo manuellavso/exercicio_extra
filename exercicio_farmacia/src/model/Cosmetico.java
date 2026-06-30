@@ -23,6 +23,7 @@ public class Cosmetico extends Produto {
 	public void visualizar() {
 		super.visualizar();
 		System.out.println("\nDesconto do cosmético: R$" +this.cupom);
+		System.out.println("Novo preço após cupom: R$" +(this.getPreco() - this.cupom));
 		System.out.println();
 	}
 	

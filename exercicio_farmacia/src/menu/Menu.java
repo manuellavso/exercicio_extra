@@ -1,4 +1,4 @@
-package exercicio_farmacia;
+package menu;
 
 import java.util.InputMismatchException;
 import java.util.Optional;
@@ -191,7 +191,7 @@ public class Menu {
 				
 				receita = entrada.isEmpty() ? receita : Float.parseFloat(entrada.replace(",","."));
 				
-				int id = produto.get().getID();
+				//int id = produto.get().getID();
 				produtoController.atualizar(new Medicamento(nome, iD, tipo, preco, receita));
 			}
 			
@@ -206,7 +206,7 @@ public class Menu {
 				
 				cupom = entrada.isEmpty() ? cupom : Float.parseFloat(entrada.replace(",","."));
 				
-				int id = produto.get().getID();
+				//int id = produto.get().getID();
 				produtoController.atualizar(new Cosmetico(nome,iD, tipo, preco, cupom));
 			}
 			
@@ -237,7 +237,7 @@ public class Menu {
 				System.out.println("\nOperação cancelada!");
 		}
 		else {
-			System.out.println("O produto com ID" +iD+ " não foi encontrado.");
+			System.out.println("O produto com ID " +iD+ " não foi encontrado.");
 		}
 	}
 	
